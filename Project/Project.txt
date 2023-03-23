@@ -1,0 +1,114 @@
+Configuration	Project
+STM32CubeMX 	6.8.0
+Date	03/23/2023
+MCU	STM32F103C8Tx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PD0-OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PD1-OSC_OUT
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+3	PC14-OSC32_IN	RCC_OSC32_IN	
+4	PC15-OSC32_OUT	RCC_OSC32_OUT	
+5	PD0-OSC_IN	RCC_OSC_IN	
+6	PD1-OSC_OUT	RCC_OSC_OUT	
+13	PA3	GPIO_Output	DS18B20
+14	PA4	GPIO_Output	LED_Up
+15	PA5	GPIO_Output	LED_Down
+16	PA6	GPIO_Output	Pump1_IN1
+17	PA7	GPIO_Output	Pump1_IN3
+18	PB0	GPIO_Output	HCSR04_TRIG
+19	PB1	GPIO_Input	HCSR04_ECHO
+21	PB10	GPIO_Output	Pump2_IN2
+22	PB11	GPIO_Output	Pump2_IN4
+25	PB12	GPIO_Output	LEDGND_Up
+26	PB13	GPIO_Output	LEDGND_Down
+27	PB14	GPIO_Input	HX711_DT
+28	PB15	GPIO_Output	HX711_SCK
+30	PA9	USART1_TX	
+31	PA10	USART1_RX	
+34	PA13	SYS_JTMS-SWDIO	
+37	PA14	SYS_JTCK-SWCLK	
+42	PB6	I2C1_SCL	
+43	PB7	I2C1_SDA	
+PERIPHERALS	MODES	FUNCTIONS	PINS
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+RCC	Crystal/Ceramic Resonator	RCC_OSC_IN	PD0-OSC_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC_OUT	PD1-OSC_OUT
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_IN	PC14-OSC32_IN
+RCC	Crystal/Ceramic Resonator	RCC_OSC32_OUT	PC15-OSC32_OUT
+SYS	Serial Wire	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire	SYS_JTMS-SWDIO	PA13
+SYS	SysTick	SYS_VS_Systick	VP_SYS_VS_Systick
+TIM1	Internal Clock	TIM1_VS_ClockSourceINT	VP_TIM1_VS_ClockSourceINT
+USART1	Asynchronous	USART1_RX	PA10
+USART1	Asynchronous	USART1_TX	PA9
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+3	PC14-OSC32_IN	RCC_OSC32_IN	
+4	PC15-OSC32_OUT	RCC_OSC32_OUT	
+5	PD0-OSC_IN	RCC_OSC_IN	
+6	PD1-OSC_OUT	RCC_OSC_OUT	
+13	PA3	GPIO_Output	DS18B20
+14	PA4	GPIO_Output	LED_Up
+15	PA5	GPIO_Output	LED_Down
+16	PA6	GPIO_Output	Pump1_IN1
+17	PA7	GPIO_Output	Pump1_IN3
+18	PB0	GPIO_Output	HCSR04_TRIG
+19	PB1	GPIO_Input	HCSR04_ECHO
+21	PB10	GPIO_Output	Pump2_IN2
+22	PB11	GPIO_Output	Pump2_IN4
+25	PB12	GPIO_Output	LEDGND_Up
+26	PB13	GPIO_Output	LEDGND_Down
+27	PB14	GPIO_Input	HX711_DT
+28	PB15	GPIO_Output	HX711_SCK
+30	PA9	USART1_TX	
+31	PA10	USART1_RX	
+34	PA13	SYS_JTMS-SWDIO	
+37	PA14	SYS_JTCK-SWCLK	
+42	PB6	I2C1_SCL	
+43	PB7	I2C1_SDA	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : Project
+Project Folder : D:\Documents\GithubProjects\STM32_IntelligentFishtankControlSystem\Project
+Toolchain / IDE : MDK-ARM V5.32
+Firmware Package Name and Version : STM32Cube FW_F1 V1.8.4
+
+
+Code Generation Settings : 
+STM32Cube MCU packages and embedded software packs : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per peripheral : Yes
+Backup previously generated files when re-generating : No
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : 
+
+
+
+
+
