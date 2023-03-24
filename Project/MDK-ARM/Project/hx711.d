@@ -29,4 +29,4 @@ project/hx711.o: ..\Core\Src\hx711.c ..\Core\Inc\hx711.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
-  ..\Core\Inc\main.h ..\Core\Inc\tim.h
+  ..\Core\Inc\main.h
