@@ -74,6 +74,10 @@ int main(void)
   /* USER CODE BEGIN 1 */
 	uint8_t x = 0;
 	uint8_t y = 0;
+	uint8_t i = 0;
+	uint8_t j = 0;
+	uint8_t k = 0;
+	uint8_t l = 0;
 	float waterStageValue = 0;
 	float temperatureValue = 0;
 	float weightValue = 0;
@@ -83,6 +87,7 @@ int main(void)
 	uint8_t temperatureDecimalValue = 0;
 	uint8_t temperatureHighValue = 30;
 	uint8_t temperatureLowValue = 20;
+	uint8_t standardContainerHeight = 30;
 	uint8_t waterStageHighValue = 20;
 	uint8_t waterStageLowValue = 10;
   /* USER CODE END 1 */
@@ -138,7 +143,13 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		waterStageValue = HCSR04_GetDistance_Repeatedly(5);
+		if(HAL_GPIO_ReadPin(Key_1_GPIO_Port, Key_1_Pin) == GPIO_PIN_RESET)
+		{
+			HAL_Delay(20);
+			i += 1;
+		}
+		
+		waterStageValue = standardContainerHeight - HCSR04_GetDistance_Repeatedly(5);
 		waterStageIntegerValue = (int)waterStageValue;
 		waterStageDecimalValue = 10 * (waterStageValue - waterStageIntegerValue);
 		OLED_ShowNum(x + 16 * 4 + 8 * 1, y + 2 * 1, waterStageIntegerValue, 2, 16);
@@ -159,22 +170,65 @@ int main(void)
 		OLED_ShowNum(x + 16 * 4 + 8 * 1, y + 2 * 3, weightValue, 4, 16);
 		OLED_ShowChar(x + 16 * 4 + 8 * 5, y + 2 * 3, 'g', 16);
 		
-		if(temperatureValue>temperatureHighValue)
+		if(i%2==0)
 		{
-			subtractHeat();
+			OLED_ShowChar(x + 16 * 7 + 8 * 1, y + 2 * 3, 'A', 16);
+			if(temperatureValue>temperatureHighValue)
+			{
+				subtractHeat();
+			}
+			else if(temperatureValue<temperatureLowValue)
+			{
+				addHeat();
+			}
+			if(waterStageValue>waterStageHighValue)
+			{
+				subtractWater();
+			}
+			else if(waterStageValue<waterStageLowValue)
+			{
+				addWater();
+			}
 		}
-		else if(temperatureValue<temperatureLowValue)
+		else if(i%2==1)
 		{
-			addHeat();
-		}
-		
-		if(waterStageValue>waterStageHighValue)
-		{
-			subtractWater();
-	  }
-		else if(waterStageValue<waterStageLowValue)
-		{
-			addWater();
+			OLED_ShowChar(x + 16 * 7 + 8 * 1, y + 2 * 3, 'H', 16);
+			if(HAL_GPIO_ReadPin(Key_2_GPIO_Port, Key_2_Pin) == GPIO_PIN_RESET)
+			{
+				HAL_Delay(20);
+				j = 1;
+			}
+			else if(HAL_GPIO_ReadPin(Key_3_GPIO_Port, Key_3_Pin) == GPIO_PIN_RESET)
+			{
+				HAL_Delay(20);
+				j = 2;
+			}
+			else if(HAL_GPIO_ReadPin(Key_4_GPIO_Port, Key_4_Pin) == GPIO_PIN_RESET)
+			{
+				HAL_Delay(20);
+				j = 3;
+			}
+			switch(j)
+			{
+				case 1:
+					addWater();
+					break;
+				case 2:
+					subtractWater();
+					break;
+				case 3:
+					HAL_GPIO_WritePin(LED_Up_GPIO_Port, LED_Up_Pin, GPIO_PIN_SET);
+					break;
+				default:
+					HAL_GPIO_WritePin(Pump1_IN1_GPIO_Port, Pump1_IN1_Pin, GPIO_PIN_RESET);
+				  HAL_GPIO_WritePin(Pump1_IN3_GPIO_Port, Pump1_IN3_Pin, GPIO_PIN_RESET);
+				  HAL_GPIO_WritePin(Pump2_IN2_GPIO_Port, Pump2_IN2_Pin, GPIO_PIN_RESET);
+				  HAL_GPIO_WritePin(Pump2_IN4_GPIO_Port, Pump2_IN4_Pin, GPIO_PIN_RESET);
+					HAL_GPIO_WritePin(LED_Up_GPIO_Port, LED_Up_Pin, GPIO_PIN_RESET);
+					HAL_GPIO_WritePin(LED_Down_GPIO_Port, LED_Down_Pin, GPIO_PIN_RESET);
+					break;
+			}
+			j = 0;
 		}
     /* USER CODE END WHILE */
 

@@ -87,11 +87,13 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(HCSR04_ECHO_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : PtPin */
-  GPIO_InitStruct.Pin = HX711_DT_Pin;
+  /*Configure GPIO pins : PBPin PBPin PBPin PBPin
+                           PBPin */
+  GPIO_InitStruct.Pin = HX711_DT_Pin|Key_1_Pin|Key_2_Pin|Key_3_Pin
+                          |Key_4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(HX711_DT_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PtPin */
   GPIO_InitStruct.Pin = HX711_SCK_Pin;

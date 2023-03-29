@@ -83,6 +83,14 @@ void Error_Handler(void);
 #define HX711_DT_GPIO_Port GPIOB
 #define HX711_SCK_Pin GPIO_PIN_15
 #define HX711_SCK_GPIO_Port GPIOB
+#define Key_1_Pin GPIO_PIN_4
+#define Key_1_GPIO_Port GPIOB
+#define Key_2_Pin GPIO_PIN_5
+#define Key_2_GPIO_Port GPIOB
+#define Key_3_Pin GPIO_PIN_8
+#define Key_3_GPIO_Port GPIOB
+#define Key_4_Pin GPIO_PIN_9
+#define Key_4_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 
