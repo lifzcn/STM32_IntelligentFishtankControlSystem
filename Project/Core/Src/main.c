@@ -112,29 +112,29 @@ int main(void)
   MX_TIM1_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-//	OLED_Init();
-//	OLED_Clear();
-//	OLED_ShowChinese(x + 16 + 16 * 0, y + 2 * 0, 0);
-//	OLED_ShowChinese(x + 16 + 16 * 1, y + 2 * 0, 1);
-//	OLED_ShowChinese(x + 16 + 16 * 2, y + 2 * 0, 2);
-//	OLED_ShowChinese(x + 16 + 16 * 3, y + 2 * 0, 3);
-//	OLED_ShowChinese(x + 16 + 16 * 4, y + 2 * 0, 4);
-//	OLED_ShowChinese(x + 16 + 16 * 5, y + 2 * 0, 5);
-//	OLED_ShowChinese(x + 16 * 0, y + 2 * 1, 6);
-//	OLED_ShowChinese(x + 16 * 1, y + 2 * 1, 7);
-//	OLED_ShowChinese(x + 16 * 2, y + 2 * 1, 8);
-//	OLED_ShowChinese(x + 16 * 3, y + 2 * 1, 9);
-//	OLED_ShowChar(x + 16 * 4, y + 2 * 1, ':', 16);
-//	OLED_ShowChinese(x + 16 * 0, y + 2 * 2, 6);
-//	OLED_ShowChinese(x + 16 * 1, y + 2 * 2, 7);
-//	OLED_ShowChinese(x + 16 * 2, y + 2 * 2, 10);
-//	OLED_ShowChinese(x + 16 * 3, y + 2 * 2, 11);
-//	OLED_ShowChar(x + 16 * 4, y + 2 * 2, ':', 16);
-//	OLED_ShowChinese(x + 16 * 0, y + 2 * 3, 6);
-//	OLED_ShowChinese(x + 16 * 1, y + 2 * 3, 7);
-//	OLED_ShowChinese(x + 16 * 2, y + 2 * 3, 12);
-//	OLED_ShowChinese(x + 16 * 3, y + 2 * 3, 13);
-//	OLED_ShowChar(x + 16 * 4, y + 2 * 3, ':', 16);
+	OLED_Init();
+	OLED_Clear();
+	OLED_ShowChinese(x + 16 + 16 * 0, y + 2 * 0, 0);
+	OLED_ShowChinese(x + 16 + 16 * 1, y + 2 * 0, 1);
+	OLED_ShowChinese(x + 16 + 16 * 2, y + 2 * 0, 2);
+	OLED_ShowChinese(x + 16 + 16 * 3, y + 2 * 0, 3);
+	OLED_ShowChinese(x + 16 + 16 * 4, y + 2 * 0, 4);
+	OLED_ShowChinese(x + 16 + 16 * 5, y + 2 * 0, 5);
+	OLED_ShowChinese(x + 16 * 0, y + 2 * 1, 6);
+	OLED_ShowChinese(x + 16 * 1, y + 2 * 1, 7);
+	OLED_ShowChinese(x + 16 * 2, y + 2 * 1, 8);
+	OLED_ShowChinese(x + 16 * 3, y + 2 * 1, 9);
+	OLED_ShowChar(x + 16 * 4, y + 2 * 1, ':', 16);
+	OLED_ShowChinese(x + 16 * 0, y + 2 * 2, 6);
+	OLED_ShowChinese(x + 16 * 1, y + 2 * 2, 7);
+	OLED_ShowChinese(x + 16 * 2, y + 2 * 2, 10);
+	OLED_ShowChinese(x + 16 * 3, y + 2 * 2, 11);
+	OLED_ShowChar(x + 16 * 4, y + 2 * 2, ':', 16);
+	OLED_ShowChinese(x + 16 * 0, y + 2 * 3, 6);
+	OLED_ShowChinese(x + 16 * 1, y + 2 * 3, 7);
+	OLED_ShowChinese(x + 16 * 2, y + 2 * 3, 12);
+	OLED_ShowChinese(x + 16 * 3, y + 2 * 3, 13);
+	OLED_ShowChar(x + 16 * 4, y + 2 * 3, ':', 16);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -170,6 +170,7 @@ int main(void)
 		
 		if(i%2==0)
 		{
+			printf("Auto Mode!\n");
 			OLED_ShowChar(x + 16 * 7 + 8 * 1, y + 2 * 3, 'A', 16);
 			if(temperatureValue>temperatureHighValue)
 			{
@@ -190,6 +191,7 @@ int main(void)
 		}
 		else if(i%2==1)
 		{
+			printf("Hand Mode!\n");
 			OLED_ShowChar(x + 16 * 7 + 8 * 1, y + 2 * 3, 'H', 16);
 			if(HAL_GPIO_ReadPin(Key_1_GPIO_Port, Key_1_Pin) == GPIO_PIN_RESET)
 			{
@@ -210,12 +212,15 @@ int main(void)
 			{
 				case 1:
 					addWater();
+					printf("Add Water!\n");
 					break;
 				case 2:
 					subtractWater();
+					printf("Subtract Water!\n");
 					break;
 				case 3:
 					HAL_GPIO_WritePin(LED_Up_GPIO_Port, LED_Up_Pin, GPIO_PIN_SET);
+					printf("LED Indicate!\n");
 					break;
 				default:
 					HAL_GPIO_WritePin(Pump1_IN1_GPIO_Port, Pump1_IN1_Pin, GPIO_PIN_RESET);
