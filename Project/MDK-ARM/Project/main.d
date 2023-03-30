@@ -30,6 +30,6 @@ project/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
   ..\Core\Inc\i2c.h ..\Core\Inc\tim.h ..\Core\Inc\usart.h \
-  ..\Core\Inc\gpio.h ..\Core\Inc\oled.h ..\Core\Inc\hcsr04.h \
-  ..\Core\Inc\ds18b20.h ..\Core\Inc\indicate.h ..\Core\Inc\pump.h \
-  ..\Core\Inc\hx711.h
+  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h ..\Core\Inc\gpio.h \
+  ..\Core\Inc\oled.h ..\Core\Inc\hcsr04.h ..\Core\Inc\ds18b20.h \
+  ..\Core\Inc\indicate.h ..\Core\Inc\pump.h ..\Core\Inc\hx711.h

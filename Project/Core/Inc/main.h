@@ -57,12 +57,16 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define DS18B20_Pin GPIO_PIN_3
-#define DS18B20_GPIO_Port GPIOA
-#define LED_Up_Pin GPIO_PIN_4
-#define LED_Up_GPIO_Port GPIOA
-#define LED_Down_Pin GPIO_PIN_5
-#define LED_Down_GPIO_Port GPIOA
+#define Key_GND_Pin GPIO_PIN_0
+#define Key_GND_GPIO_Port GPIOA
+#define Key_1_Pin GPIO_PIN_1
+#define Key_1_GPIO_Port GPIOA
+#define Key_2_Pin GPIO_PIN_2
+#define Key_2_GPIO_Port GPIOA
+#define Key_3_Pin GPIO_PIN_3
+#define Key_3_GPIO_Port GPIOA
+#define Key_4_Pin GPIO_PIN_4
+#define Key_4_GPIO_Port GPIOA
 #define Pump1_IN1_Pin GPIO_PIN_6
 #define Pump1_IN1_GPIO_Port GPIOA
 #define Pump1_IN3_Pin GPIO_PIN_7
@@ -71,6 +75,8 @@ void Error_Handler(void);
 #define HCSR04_TRIG_GPIO_Port GPIOB
 #define HCSR04_ECHO_Pin GPIO_PIN_1
 #define HCSR04_ECHO_GPIO_Port GPIOB
+#define DS18B20_Pin GPIO_PIN_2
+#define DS18B20_GPIO_Port GPIOB
 #define Pump2_IN2_Pin GPIO_PIN_10
 #define Pump2_IN2_GPIO_Port GPIOB
 #define Pump2_IN4_Pin GPIO_PIN_11
@@ -83,14 +89,10 @@ void Error_Handler(void);
 #define HX711_DT_GPIO_Port GPIOB
 #define HX711_SCK_Pin GPIO_PIN_15
 #define HX711_SCK_GPIO_Port GPIOB
-#define Key_1_Pin GPIO_PIN_4
-#define Key_1_GPIO_Port GPIOB
-#define Key_2_Pin GPIO_PIN_5
-#define Key_2_GPIO_Port GPIOB
-#define Key_3_Pin GPIO_PIN_8
-#define Key_3_GPIO_Port GPIOB
-#define Key_4_Pin GPIO_PIN_9
-#define Key_4_GPIO_Port GPIOB
+#define LED_Up_Pin GPIO_PIN_4
+#define LED_Up_GPIO_Port GPIOB
+#define LED_Down_Pin GPIO_PIN_5
+#define LED_Down_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

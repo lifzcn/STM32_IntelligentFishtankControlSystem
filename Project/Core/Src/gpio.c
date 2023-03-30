@@ -51,31 +51,36 @@ void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, DS18B20_Pin|LED_Up_Pin|LED_Down_Pin|Pump1_IN1_Pin
-                          |Pump1_IN3_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, Pump1_IN1_Pin|Pump1_IN3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOB, HCSR04_TRIG_Pin|Pump2_IN2_Pin|Pump2_IN4_Pin|LEDGND_Up_Pin
-                          |LEDGND_Down_Pin|HX711_SCK_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, HCSR04_TRIG_Pin|DS18B20_Pin|Pump2_IN2_Pin|Pump2_IN4_Pin
+                          |LEDGND_Up_Pin|LEDGND_Down_Pin|HX711_SCK_Pin|LED_Up_Pin
+                          |LED_Down_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : PtPin */
-  GPIO_InitStruct.Pin = DS18B20_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
-  HAL_GPIO_Init(DS18B20_GPIO_Port, &GPIO_InitStruct);
+  GPIO_InitStruct.Pin = Key_GND_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(Key_GND_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PAPin PAPin PAPin PAPin */
-  GPIO_InitStruct.Pin = LED_Up_Pin|LED_Down_Pin|Pump1_IN1_Pin|Pump1_IN3_Pin;
+  GPIO_InitStruct.Pin = Key_1_Pin|Key_2_Pin|Key_3_Pin|Key_4_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : PAPin PAPin */
+  GPIO_InitStruct.Pin = Pump1_IN1_Pin|Pump1_IN3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PBPin PBPin PBPin PBPin
-                           PBPin */
+                           PBPin PBPin PBPin */
   GPIO_InitStruct.Pin = HCSR04_TRIG_Pin|Pump2_IN2_Pin|Pump2_IN4_Pin|LEDGND_Up_Pin
-                          |LEDGND_Down_Pin;
+                          |LEDGND_Down_Pin|LED_Up_Pin|LED_Down_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
@@ -87,13 +92,18 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(HCSR04_ECHO_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : PBPin PBPin PBPin PBPin
-                           PBPin */
-  GPIO_InitStruct.Pin = HX711_DT_Pin|Key_1_Pin|Key_2_Pin|Key_3_Pin
-                          |Key_4_Pin;
+  /*Configure GPIO pin : PtPin */
+  GPIO_InitStruct.Pin = DS18B20_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(DS18B20_GPIO_Port, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : PtPin */
+  GPIO_InitStruct.Pin = HX711_DT_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+  HAL_GPIO_Init(HX711_DT_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PtPin */
   GPIO_InitStruct.Pin = HX711_SCK_Pin;
