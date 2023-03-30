@@ -2084,35 +2084,35 @@ Image Symbol Table
     I2C_WaitOnBTFFlagUntilTimeout            0x080022b5   Thumb Code   168  stm32f1xx_hal_i2c.o(.text.I2C_WaitOnBTFFlagUntilTimeout)
     [Anonymous Symbol]                       0x080022b4   Section        0  stm32f1xx_hal_i2c.o(.text.I2C_WaitOnBTFFlagUntilTimeout)
     [Anonymous Symbol]                       0x0800235c   Section        0  gpio.o(.text.MX_GPIO_Init)
-    [Anonymous Symbol]                       0x0800247c   Section        0  i2c.o(.text.MX_I2C1_Init)
-    [Anonymous Symbol]                       0x080024c0   Section        0  tim.o(.text.MX_TIM1_Init)
-    [Anonymous Symbol]                       0x08002538   Section        0  usart.o(.text.MX_USART1_UART_Init)
-    [Anonymous Symbol]                       0x08002574   Section        0  stm32f1xx_it.o(.text.MemManage_Handler)
-    [Anonymous Symbol]                       0x08002578   Section        0  stm32f1xx_it.o(.text.NMI_Handler)
-    [Anonymous Symbol]                       0x0800257c   Section        0  oled.o(.text.OLED_Clear)
-    [Anonymous Symbol]                       0x08002628   Section        0  oled.o(.text.OLED_Init)
-    [Anonymous Symbol]                       0x08002638   Section        0  oled.o(.text.OLED_ShowChar)
-    [Anonymous Symbol]                       0x08002a00   Section        0  oled.o(.text.OLED_ShowChinese)
-    [Anonymous Symbol]                       0x08002b50   Section        0  oled.o(.text.OLED_ShowNum)
-    [Anonymous Symbol]                       0x08002c60   Section        0  stm32f1xx_it.o(.text.PendSV_Handler)
-    [Anonymous Symbol]                       0x08002c64   Section        0  stm32f1xx_it.o(.text.SVC_Handler)
-    [Anonymous Symbol]                       0x08002c68   Section        0  stm32f1xx_it.o(.text.SysTick_Handler)
-    [Anonymous Symbol]                       0x08002c6c   Section        0  system_stm32f1xx.o(.text.SystemInit)
-    [Anonymous Symbol]                       0x08002c70   Section        0  stm32f1xx_it.o(.text.UsageFault_Handler)
-    [Anonymous Symbol]                       0x08002c74   Section        0  oled.o(.text.WriteCmd)
-    [Anonymous Symbol]                       0x08002ed4   Section        0  indicate.o(.text.addHeat)
-    [Anonymous Symbol]                       0x08002ef8   Section        0  pump.o(.text.addWater)
-    [Anonymous Symbol]                       0x08002f1c   Section        0  usart.o(.text.fputc)
-    [Anonymous Symbol]                       0x08002f3c   Section        0  main.o(.text.main)
-    [Anonymous Symbol]                       0x08003338   Section        0  hx711.o(.text.readCount)
-    [Anonymous Symbol]                       0x080033bc   Section        0  indicate.o(.text.subtractHeat)
-    [Anonymous Symbol]                       0x080033e0   Section        0  pump.o(.text.subtractWater)
-    i.__scatterload_copy                     0x08003406   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x08003414   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x08003416   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i.puts                                   0x08003424   Section        0  puts.o(i.puts)
-    .L__const.HAL_RCC_GetSysClockFreq.aPredivFactorTable 0x08003448   Data           2  stm32f1xx_hal_rcc.o(.rodata..L__const.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
-    .L__const.HAL_RCC_GetSysClockFreq.aPLLMULFactorTable 0x0800584e   Data          16  stm32f1xx_hal_rcc.o(.rodata.cst16)
+    [Anonymous Symbol]                       0x08002478   Section        0  i2c.o(.text.MX_I2C1_Init)
+    [Anonymous Symbol]                       0x080024bc   Section        0  tim.o(.text.MX_TIM1_Init)
+    [Anonymous Symbol]                       0x08002534   Section        0  usart.o(.text.MX_USART1_UART_Init)
+    [Anonymous Symbol]                       0x08002570   Section        0  stm32f1xx_it.o(.text.MemManage_Handler)
+    [Anonymous Symbol]                       0x08002574   Section        0  stm32f1xx_it.o(.text.NMI_Handler)
+    [Anonymous Symbol]                       0x08002578   Section        0  oled.o(.text.OLED_Clear)
+    [Anonymous Symbol]                       0x08002624   Section        0  oled.o(.text.OLED_Init)
+    [Anonymous Symbol]                       0x08002634   Section        0  oled.o(.text.OLED_ShowChar)
+    [Anonymous Symbol]                       0x080029fc   Section        0  oled.o(.text.OLED_ShowChinese)
+    [Anonymous Symbol]                       0x08002b4c   Section        0  oled.o(.text.OLED_ShowNum)
+    [Anonymous Symbol]                       0x08002c5c   Section        0  stm32f1xx_it.o(.text.PendSV_Handler)
+    [Anonymous Symbol]                       0x08002c60   Section        0  stm32f1xx_it.o(.text.SVC_Handler)
+    [Anonymous Symbol]                       0x08002c64   Section        0  stm32f1xx_it.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x08002c68   Section        0  system_stm32f1xx.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x08002c6c   Section        0  stm32f1xx_it.o(.text.UsageFault_Handler)
+    [Anonymous Symbol]                       0x08002c70   Section        0  oled.o(.text.WriteCmd)
+    [Anonymous Symbol]                       0x08002ed0   Section        0  indicate.o(.text.addHeat)
+    [Anonymous Symbol]                       0x08002ef4   Section        0  pump.o(.text.addWater)
+    [Anonymous Symbol]                       0x08002f18   Section        0  usart.o(.text.fputc)
+    [Anonymous Symbol]                       0x08002f38   Section        0  main.o(.text.main)
+    [Anonymous Symbol]                       0x08003334   Section        0  hx711.o(.text.readCount)
+    [Anonymous Symbol]                       0x080033b8   Section        0  indicate.o(.text.subtractHeat)
+    [Anonymous Symbol]                       0x080033dc   Section        0  pump.o(.text.subtractWater)
+    i.__scatterload_copy                     0x08003402   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x08003410   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x08003412   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.puts                                   0x08003420   Section        0  puts.o(i.puts)
+    .L__const.HAL_RCC_GetSysClockFreq.aPredivFactorTable 0x08003444   Data           2  stm32f1xx_hal_rcc.o(.rodata..L__const.HAL_RCC_GetSysClockFreq.aPredivFactorTable)
+    .L__const.HAL_RCC_GetSysClockFreq.aPLLMULFactorTable 0x0800584a   Data          16  stm32f1xx_hal_rcc.o(.rodata.cst16)
     .data                                    0x20000000   Section        4  stdout.o(.data)
     .L_MergedGlobals                         0x20000004   Data           8  stm32f1xx_hal.o(.data..L_MergedGlobals)
     [Anonymous Symbol]                       0x20000004   Section        0  stm32f1xx_hal.o(.data..L_MergedGlobals)
@@ -2253,41 +2253,41 @@ Image Symbol Table
     HCSR04_GetDistance_Single                0x08001fa5   Thumb Code   112  hcsr04.o(.text.HCSR04_GetDistance_Single)
     HX711_GetWeight                          0x08002015   Thumb Code    40  hx711.o(.text.HX711_GetWeight)
     HardFault_Handler                        0x0800203d   Thumb Code     2  stm32f1xx_it.o(.text.HardFault_Handler)
-    MX_GPIO_Init                             0x0800235d   Thumb Code   286  gpio.o(.text.MX_GPIO_Init)
-    MX_I2C1_Init                             0x0800247d   Thumb Code    66  i2c.o(.text.MX_I2C1_Init)
-    MX_TIM1_Init                             0x080024c1   Thumb Code   118  tim.o(.text.MX_TIM1_Init)
-    MX_USART1_UART_Init                      0x08002539   Thumb Code    60  usart.o(.text.MX_USART1_UART_Init)
-    MemManage_Handler                        0x08002575   Thumb Code     2  stm32f1xx_it.o(.text.MemManage_Handler)
-    NMI_Handler                              0x08002579   Thumb Code     2  stm32f1xx_it.o(.text.NMI_Handler)
-    OLED_Clear                               0x0800257d   Thumb Code   172  oled.o(.text.OLED_Clear)
-    OLED_Init                                0x08002629   Thumb Code    16  oled.o(.text.OLED_Init)
-    OLED_ShowChar                            0x08002639   Thumb Code   966  oled.o(.text.OLED_ShowChar)
-    OLED_ShowChinese                         0x08002a01   Thumb Code   334  oled.o(.text.OLED_ShowChinese)
-    OLED_ShowNum                             0x08002b51   Thumb Code   270  oled.o(.text.OLED_ShowNum)
-    PendSV_Handler                           0x08002c61   Thumb Code     2  stm32f1xx_it.o(.text.PendSV_Handler)
-    SVC_Handler                              0x08002c65   Thumb Code     2  stm32f1xx_it.o(.text.SVC_Handler)
-    SysTick_Handler                          0x08002c69   Thumb Code     4  stm32f1xx_it.o(.text.SysTick_Handler)
-    SystemInit                               0x08002c6d   Thumb Code     2  system_stm32f1xx.o(.text.SystemInit)
-    UsageFault_Handler                       0x08002c71   Thumb Code     2  stm32f1xx_it.o(.text.UsageFault_Handler)
-    WriteCmd                                 0x08002c75   Thumb Code   606  oled.o(.text.WriteCmd)
-    addHeat                                  0x08002ed5   Thumb Code    36  indicate.o(.text.addHeat)
-    addWater                                 0x08002ef9   Thumb Code    34  pump.o(.text.addWater)
-    fputc                                    0x08002f1d   Thumb Code    32  usart.o(.text.fputc)
-    main                                     0x08002f3d   Thumb Code   952  main.o(.text.main)
-    readCount                                0x08003339   Thumb Code   132  hx711.o(.text.readCount)
-    subtractHeat                             0x080033bd   Thumb Code    36  indicate.o(.text.subtractHeat)
-    subtractWater                            0x080033e1   Thumb Code    38  pump.o(.text.subtractWater)
-    __scatterload_copy                       0x08003407   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x08003415   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x08003417   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    puts                                     0x08003425   Thumb Code    30  puts.o(i.puts)
-    AHBPrescTable                            0x0800344a   Data          16  system_stm32f1xx.o(.rodata.AHBPrescTable)
-    APBPrescTable                            0x0800345a   Data           8  system_stm32f1xx.o(.rodata.APBPrescTable)
-    F6x8                                     0x08003462   Data         552  oled.o(.rodata.F6x8)
-    F8X16                                    0x0800368a   Data        1504  oled.o(.rodata.F8X16)
-    Hzk                                      0x08003c6a   Data        7140  oled.o(.rodata.Hzk)
-    Region$$Table$$Base                      0x08005860   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08005880   Number         0  anon$$obj.o(Region$$Table)
+    MX_GPIO_Init                             0x0800235d   Thumb Code   284  gpio.o(.text.MX_GPIO_Init)
+    MX_I2C1_Init                             0x08002479   Thumb Code    66  i2c.o(.text.MX_I2C1_Init)
+    MX_TIM1_Init                             0x080024bd   Thumb Code   118  tim.o(.text.MX_TIM1_Init)
+    MX_USART1_UART_Init                      0x08002535   Thumb Code    60  usart.o(.text.MX_USART1_UART_Init)
+    MemManage_Handler                        0x08002571   Thumb Code     2  stm32f1xx_it.o(.text.MemManage_Handler)
+    NMI_Handler                              0x08002575   Thumb Code     2  stm32f1xx_it.o(.text.NMI_Handler)
+    OLED_Clear                               0x08002579   Thumb Code   172  oled.o(.text.OLED_Clear)
+    OLED_Init                                0x08002625   Thumb Code    16  oled.o(.text.OLED_Init)
+    OLED_ShowChar                            0x08002635   Thumb Code   966  oled.o(.text.OLED_ShowChar)
+    OLED_ShowChinese                         0x080029fd   Thumb Code   334  oled.o(.text.OLED_ShowChinese)
+    OLED_ShowNum                             0x08002b4d   Thumb Code   270  oled.o(.text.OLED_ShowNum)
+    PendSV_Handler                           0x08002c5d   Thumb Code     2  stm32f1xx_it.o(.text.PendSV_Handler)
+    SVC_Handler                              0x08002c61   Thumb Code     2  stm32f1xx_it.o(.text.SVC_Handler)
+    SysTick_Handler                          0x08002c65   Thumb Code     4  stm32f1xx_it.o(.text.SysTick_Handler)
+    SystemInit                               0x08002c69   Thumb Code     2  system_stm32f1xx.o(.text.SystemInit)
+    UsageFault_Handler                       0x08002c6d   Thumb Code     2  stm32f1xx_it.o(.text.UsageFault_Handler)
+    WriteCmd                                 0x08002c71   Thumb Code   606  oled.o(.text.WriteCmd)
+    addHeat                                  0x08002ed1   Thumb Code    36  indicate.o(.text.addHeat)
+    addWater                                 0x08002ef5   Thumb Code    34  pump.o(.text.addWater)
+    fputc                                    0x08002f19   Thumb Code    32  usart.o(.text.fputc)
+    main                                     0x08002f39   Thumb Code   952  main.o(.text.main)
+    readCount                                0x08003335   Thumb Code   132  hx711.o(.text.readCount)
+    subtractHeat                             0x080033b9   Thumb Code    36  indicate.o(.text.subtractHeat)
+    subtractWater                            0x080033dd   Thumb Code    38  pump.o(.text.subtractWater)
+    __scatterload_copy                       0x08003403   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x08003411   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x08003413   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    puts                                     0x08003421   Thumb Code    30  puts.o(i.puts)
+    AHBPrescTable                            0x08003446   Data          16  system_stm32f1xx.o(.rodata.AHBPrescTable)
+    APBPrescTable                            0x08003456   Data           8  system_stm32f1xx.o(.rodata.APBPrescTable)
+    F6x8                                     0x0800345e   Data         552  oled.o(.rodata.F6x8)
+    F8X16                                    0x08003686   Data        1504  oled.o(.rodata.F8X16)
+    Hzk                                      0x08003c66   Data        7140  oled.o(.rodata.Hzk)
+    Region$$Table$$Base                      0x0800585c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x0800587c   Number         0  anon$$obj.o(Region$$Table)
     __stdout                                 0x20000000   Data           4  stdout.o(.data)
     uwTickFreq                               0x20000004   Data           1  stm32f1xx_hal.o(.data..L_MergedGlobals)
     uwTickPrio                               0x20000008   Data           4  stm32f1xx_hal.o(.data..L_MergedGlobals)
@@ -2311,7 +2311,7 @@ Memory Map of the image
 
   Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000058b0, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00005880, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x0000587c, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2415,57 +2415,56 @@ Memory Map of the image
     0x08002040   0x08002040   0x00000272   Code   RO          294    .text.I2C_RequestMemoryWrite  stm32f1xx_hal_i2c.o
     0x080022b2   0x080022b2   0x00000002   PAD
     0x080022b4   0x080022b4   0x000000a8   Code   RO          264    .text.I2C_WaitOnBTFFlagUntilTimeout  stm32f1xx_hal_i2c.o
-    0x0800235c   0x0800235c   0x0000011e   Code   RO          146    .text.MX_GPIO_Init  gpio.o
-    0x0800247a   0x0800247a   0x00000002   PAD
-    0x0800247c   0x0800247c   0x00000042   Code   RO          155    .text.MX_I2C1_Init  i2c.o
-    0x080024be   0x080024be   0x00000002   PAD
-    0x080024c0   0x080024c0   0x00000076   Code   RO          170    .text.MX_TIM1_Init  tim.o
-    0x08002536   0x08002536   0x00000002   PAD
-    0x08002538   0x08002538   0x0000003c   Code   RO          187    .text.MX_USART1_UART_Init  usart.o
-    0x08002574   0x08002574   0x00000002   Code   RO          208    .text.MemManage_Handler  stm32f1xx_it.o
+    0x0800235c   0x0800235c   0x0000011c   Code   RO          146    .text.MX_GPIO_Init  gpio.o
+    0x08002478   0x08002478   0x00000042   Code   RO          155    .text.MX_I2C1_Init  i2c.o
+    0x080024ba   0x080024ba   0x00000002   PAD
+    0x080024bc   0x080024bc   0x00000076   Code   RO          170    .text.MX_TIM1_Init  tim.o
+    0x08002532   0x08002532   0x00000002   PAD
+    0x08002534   0x08002534   0x0000003c   Code   RO          187    .text.MX_USART1_UART_Init  usart.o
+    0x08002570   0x08002570   0x00000002   Code   RO          208    .text.MemManage_Handler  stm32f1xx_it.o
+    0x08002572   0x08002572   0x00000002   PAD
+    0x08002574   0x08002574   0x00000002   Code   RO          204    .text.NMI_Handler   stm32f1xx_it.o
     0x08002576   0x08002576   0x00000002   PAD
-    0x08002578   0x08002578   0x00000002   Code   RO          204    .text.NMI_Handler   stm32f1xx_it.o
-    0x0800257a   0x0800257a   0x00000002   PAD
-    0x0800257c   0x0800257c   0x000000ac   Code   RO           35    .text.OLED_Clear    oled.o
-    0x08002628   0x08002628   0x00000010   Code   RO           33    .text.OLED_Init     oled.o
-    0x08002638   0x08002638   0x000003c6   Code   RO           49    .text.OLED_ShowChar  oled.o
-    0x080029fe   0x080029fe   0x00000002   PAD
-    0x08002a00   0x08002a00   0x0000014e   Code   RO           53    .text.OLED_ShowChinese  oled.o
-    0x08002b4e   0x08002b4e   0x00000002   PAD
-    0x08002b50   0x08002b50   0x0000010e   Code   RO           47    .text.OLED_ShowNum  oled.o
+    0x08002578   0x08002578   0x000000ac   Code   RO           35    .text.OLED_Clear    oled.o
+    0x08002624   0x08002624   0x00000010   Code   RO           33    .text.OLED_Init     oled.o
+    0x08002634   0x08002634   0x000003c6   Code   RO           49    .text.OLED_ShowChar  oled.o
+    0x080029fa   0x080029fa   0x00000002   PAD
+    0x080029fc   0x080029fc   0x0000014e   Code   RO           53    .text.OLED_ShowChinese  oled.o
+    0x08002b4a   0x08002b4a   0x00000002   PAD
+    0x08002b4c   0x08002b4c   0x0000010e   Code   RO           47    .text.OLED_ShowNum  oled.o
+    0x08002c5a   0x08002c5a   0x00000002   PAD
+    0x08002c5c   0x08002c5c   0x00000002   Code   RO          218    .text.PendSV_Handler  stm32f1xx_it.o
     0x08002c5e   0x08002c5e   0x00000002   PAD
-    0x08002c60   0x08002c60   0x00000002   Code   RO          218    .text.PendSV_Handler  stm32f1xx_it.o
+    0x08002c60   0x08002c60   0x00000002   Code   RO          214    .text.SVC_Handler   stm32f1xx_it.o
     0x08002c62   0x08002c62   0x00000002   PAD
-    0x08002c64   0x08002c64   0x00000002   Code   RO          214    .text.SVC_Handler   stm32f1xx_it.o
-    0x08002c66   0x08002c66   0x00000002   PAD
-    0x08002c68   0x08002c68   0x00000004   Code   RO          220    .text.SysTick_Handler  stm32f1xx_it.o
-    0x08002c6c   0x08002c6c   0x00000002   Code   RO         1155    .text.SystemInit    system_stm32f1xx.o
+    0x08002c64   0x08002c64   0x00000004   Code   RO          220    .text.SysTick_Handler  stm32f1xx_it.o
+    0x08002c68   0x08002c68   0x00000002   Code   RO         1155    .text.SystemInit    system_stm32f1xx.o
+    0x08002c6a   0x08002c6a   0x00000002   PAD
+    0x08002c6c   0x08002c6c   0x00000002   Code   RO          212    .text.UsageFault_Handler  stm32f1xx_it.o
     0x08002c6e   0x08002c6e   0x00000002   PAD
-    0x08002c70   0x08002c70   0x00000002   Code   RO          212    .text.UsageFault_Handler  stm32f1xx_it.o
-    0x08002c72   0x08002c72   0x00000002   PAD
-    0x08002c74   0x08002c74   0x0000025e   Code   RO           27    .text.WriteCmd      oled.o
-    0x08002ed2   0x08002ed2   0x00000002   PAD
-    0x08002ed4   0x08002ed4   0x00000024   Code   RO           95    .text.addHeat       indicate.o
-    0x08002ef8   0x08002ef8   0x00000022   Code   RO          106    .text.addWater      pump.o
-    0x08002f1a   0x08002f1a   0x00000002   PAD
-    0x08002f1c   0x08002f1c   0x00000020   Code   RO          193    .text.fputc         usart.o
-    0x08002f3c   0x08002f3c   0x000003fc   Code   RO          131    .text.main          main.o
-    0x08003338   0x08003338   0x00000084   Code   RO          117    .text.readCount     hx711.o
-    0x080033bc   0x080033bc   0x00000024   Code   RO           97    .text.subtractHeat  indicate.o
-    0x080033e0   0x080033e0   0x00000026   Code   RO          108    .text.subtractWater  pump.o
-    0x08003406   0x08003406   0x0000000e   Code   RO         1232    i.__scatterload_copy  mc_w.l(handlers.o)
-    0x08003414   0x08003414   0x00000002   Code   RO         1233    i.__scatterload_null  mc_w.l(handlers.o)
-    0x08003416   0x08003416   0x0000000e   Code   RO         1234    i.__scatterload_zeroinit  mc_w.l(handlers.o)
-    0x08003424   0x08003424   0x00000024   Code   RO         1172    i.puts              mc_w.l(puts.o)
-    0x08003448   0x08003448   0x00000002   Data   RO          475    .rodata..L__const.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f1xx_hal_rcc.o
-    0x0800344a   0x0800344a   0x00000010   Data   RO         1160    .rodata.AHBPrescTable  system_stm32f1xx.o
-    0x0800345a   0x0800345a   0x00000008   Data   RO         1161    .rodata.APBPrescTable  system_stm32f1xx.o
-    0x08003462   0x08003462   0x00000228   Data   RO           55    .rodata.F6x8        oled.o
-    0x0800368a   0x0800368a   0x000005e0   Data   RO           56    .rodata.F8X16       oled.o
-    0x08003c6a   0x08003c6a   0x00001be4   Data   RO           57    .rodata.Hzk         oled.o
-    0x0800584e   0x0800584e   0x00000010   Data   RO          474    .rodata.cst16       stm32f1xx_hal_rcc.o
-    0x0800585e   0x0800585e   0x00000002   PAD
-    0x08005860   0x08005860   0x00000020   Data   RO         1231    Region$$Table       anon$$obj.o
+    0x08002c70   0x08002c70   0x0000025e   Code   RO           27    .text.WriteCmd      oled.o
+    0x08002ece   0x08002ece   0x00000002   PAD
+    0x08002ed0   0x08002ed0   0x00000024   Code   RO           95    .text.addHeat       indicate.o
+    0x08002ef4   0x08002ef4   0x00000022   Code   RO          106    .text.addWater      pump.o
+    0x08002f16   0x08002f16   0x00000002   PAD
+    0x08002f18   0x08002f18   0x00000020   Code   RO          193    .text.fputc         usart.o
+    0x08002f38   0x08002f38   0x000003fc   Code   RO          131    .text.main          main.o
+    0x08003334   0x08003334   0x00000084   Code   RO          117    .text.readCount     hx711.o
+    0x080033b8   0x080033b8   0x00000024   Code   RO           97    .text.subtractHeat  indicate.o
+    0x080033dc   0x080033dc   0x00000026   Code   RO          108    .text.subtractWater  pump.o
+    0x08003402   0x08003402   0x0000000e   Code   RO         1232    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x08003410   0x08003410   0x00000002   Code   RO         1233    i.__scatterload_null  mc_w.l(handlers.o)
+    0x08003412   0x08003412   0x0000000e   Code   RO         1234    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x08003420   0x08003420   0x00000024   Code   RO         1172    i.puts              mc_w.l(puts.o)
+    0x08003444   0x08003444   0x00000002   Data   RO          475    .rodata..L__const.HAL_RCC_GetSysClockFreq.aPredivFactorTable  stm32f1xx_hal_rcc.o
+    0x08003446   0x08003446   0x00000010   Data   RO         1160    .rodata.AHBPrescTable  system_stm32f1xx.o
+    0x08003456   0x08003456   0x00000008   Data   RO         1161    .rodata.APBPrescTable  system_stm32f1xx.o
+    0x0800345e   0x0800345e   0x00000228   Data   RO           55    .rodata.F6x8        oled.o
+    0x08003686   0x08003686   0x000005e0   Data   RO           56    .rodata.F8X16       oled.o
+    0x08003c66   0x08003c66   0x00001be4   Data   RO           57    .rodata.Hzk         oled.o
+    0x0800584a   0x0800584a   0x00000010   Data   RO          474    .rodata.cst16       stm32f1xx_hal_rcc.o
+    0x0800585a   0x0800585a   0x00000002   PAD
+    0x0800585c   0x0800585c   0x00000020   Data   RO         1231    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08005880, Size: 0x00000520, Max: 0x00005000, ABSOLUTE)
@@ -2495,7 +2494,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        952          0          0          0          0       4406   ds18b20.o
-       286          0          0          0          0       1730   gpio.o
+       284          0          0          0          0       1716   gpio.o
        158          0          0          0          0       4977   hcsr04.o
        172          0          0          0          8       1525   hx711.o
        164          0          0          0         84       4455   i2c.o
@@ -2519,9 +2518,9 @@ Image component sizes
        214          0          0          0         68       4730   usart.o
 
     ----------------------------------------------------------------------
-     11526         98       9508         40       1268     225764   Object Totals
+     11522         98       9508         40       1268     225750   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        80          0          2          1          8          0   (incl. Padding)
+        78          0          2          1          8          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -2580,15 +2579,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     13148        120       9508         44       1268     226388   Grand Totals
-     13148        120       9508         44       1268     226388   ELF Image Totals
-     13148        120       9508         44          0          0   ROM Totals
+     13144        120       9508         44       1268     226374   Grand Totals
+     13144        120       9508         44       1268     226374   ELF Image Totals
+     13144        120       9508         44          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                22656 (  22.12kB)
+    Total RO  Size (Code + RO Data)                22652 (  22.12kB)
     Total RW  Size (RW Data + ZI Data)              1312 (   1.28kB)
-    Total ROM Size (Code + RO Data + RW Data)      22700 (  22.17kB)
+    Total ROM Size (Code + RO Data + RW Data)      22696 (  22.16kB)
 
 ==============================================================================
 

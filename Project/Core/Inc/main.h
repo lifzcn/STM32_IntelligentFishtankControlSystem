@@ -67,6 +67,8 @@ void Error_Handler(void);
 #define Key_3_GPIO_Port GPIOA
 #define Key_4_Pin GPIO_PIN_4
 #define Key_4_GPIO_Port GPIOA
+#define DS18B20_Pin GPIO_PIN_5
+#define DS18B20_GPIO_Port GPIOA
 #define Pump1_IN1_Pin GPIO_PIN_6
 #define Pump1_IN1_GPIO_Port GPIOA
 #define Pump1_IN3_Pin GPIO_PIN_7
@@ -75,8 +77,6 @@ void Error_Handler(void);
 #define HCSR04_TRIG_GPIO_Port GPIOB
 #define HCSR04_ECHO_Pin GPIO_PIN_1
 #define HCSR04_ECHO_GPIO_Port GPIOB
-#define DS18B20_Pin GPIO_PIN_2
-#define DS18B20_GPIO_Port GPIOB
 #define Pump2_IN2_Pin GPIO_PIN_10
 #define Pump2_IN2_GPIO_Port GPIOB
 #define Pump2_IN4_Pin GPIO_PIN_11
